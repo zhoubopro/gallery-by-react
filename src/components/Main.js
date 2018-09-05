@@ -16,21 +16,24 @@ let imageDatas = require('../data/imageDatas.json');
 
 class AppComponent extends React.Component {
 
-  Constant = {
-    centerPos: {
-      left: 0,
-      right: 0
-    },
-    hPosRange: {   // 水平方向的取值范围
-      leftSecX: [0, 0],
-      rightSecX: [0, 0],
-      y: [0, 0]
-    },
-    vPosRange: {    // 垂直方向的取值范围
-      x: [0, 0],
-      topY: [0, 0]
+  constructor(){
+    super();
+    this.Constant = {
+      centerPos: {
+        left: 0,
+        right: 0
+      },
+      hPosRange: {   // 水平方向的取值范围
+        leftSecX: [0, 0],
+        rightSecX: [0, 0],
+        y: [0, 0]
+      },
+      vPosRange: {    // 垂直方向的取值范围
+        x: [0, 0],
+        topY: [0, 0]
+      }
     }
-  };
+  }
 
   /*
    * 翻转图片
